@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 
 
-export default function Home(props) {
+function Home(props) {
 
 
   return (
-      <h2>home page</h2>
+      <h2>Home</h2>
 
   )
 }
+export default Home;

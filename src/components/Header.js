@@ -6,11 +6,12 @@ function Header(){
 
  return(
  <HeaderStyle>
-     <h1>Neeche</h1>
+     <h1><Link to="/">Neesh</Link></h1>
     <MenuStyle>
-        <li><Link to="/">Login</Link></li>
-        <li><Link to="view">View</Link></li>
-        <li><Link to="logout">Logout</Link></li>
+        <li><Link to="/login">Login/Register</Link></li>
+        <li><Link to="/profile">Profile</Link></li>
+        <li><Link to="/notifications">Notifications</Link></li>
+        <li><Link to="/dropdown">Dropdown/Logout</Link></li>
     </MenuStyle>
  </HeaderStyle>
  );
