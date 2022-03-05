@@ -2,16 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+import Login from './Login';
+
 function Header(){
 
  return(
  <HeaderStyle>
      <h1><Link to="/">Neesh</Link></h1>
     <MenuStyle>
-        <li><Link to="/login">Login/Register</Link></li>
-        <li><Link to="/profile">Profile</Link></li>
-        <li><Link to="/notifications">Notifications</Link></li>
-        <li><Link to="/dropdown">Dropdown/Logout</Link></li>
+        <li><Link to="login">Login/Register</Link></li>
+        <li><Link to="profile">Profile</Link></li>
+        <li><Link to="notifications">Notifications</Link></li>
+        <li><Link to="logout">Logout</Link></li>
     </MenuStyle>
  </HeaderStyle>
  );

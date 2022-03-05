@@ -5,6 +5,10 @@ import { NavLink, Routes, Route, useNavigate } from 'react-router-dom';
 
 import Header from './components/Header';
 import Navigation from './components/Navigation';
+import Login from './components/Login';
+import Profile from './components/Profile';
+import Notifications from './components/Notifications';
+import Logout from './components/Logout';
 import Home from './components/Home';
 import Search from './components/Search';
 import Explore from './components/Explore';
@@ -25,6 +29,10 @@ function App() {
       <Navigation />
     
       <Routes>
+        <Route path="login" element={<Login/>}/>
+        <Route path="profile" element={<Profile/>}/>
+        <Route path="notifications" element={<Notifications/>}/>
+        <Route path="logout" element={<Logout/>}/>
         <Route path="/" element={
           <>
             <Home />

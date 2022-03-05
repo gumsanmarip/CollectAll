@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import PT from 'prop-types'
+
 
 const initialFormValues = {
   username: '',
@@ -45,7 +45,7 @@ export default function LoginForm(props) {
         placeholder="Enter password"
         id="password"
       />
-      <button disabled={isDisabled()} id="submitCredentials">Submit credentials</button>
+      <button disabled={isDisabled()} id="submitCredentials">Login</button>
     </form>
   )
 }
