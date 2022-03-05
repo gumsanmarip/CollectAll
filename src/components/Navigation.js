@@ -8,13 +8,13 @@ function Navigation(props) {
 
   return (
     <NavStyle>
-        <div>
+        <div role="banner">
           <nav>
-            <NavLink id="homeScreen" to="/">Home</NavLink>
-            <NavLink id="searchScreen" to="/search">Search</NavLink>
-            <NavLink id="exploreScreen" to="/explore">Explore</NavLink>
-            <NavLink id="shopScreen" to="/shop">Shop</NavLink>
-            <NavLink id="tradeScreen" to="/trade">Trade</NavLink>
+            <li><NavLink id="homeScreen" to="/">Home</NavLink></li>
+            <li><NavLink id="searchScreen" to="/search">Search</NavLink></li>
+            <li><NavLink id="exploreScreen" to="/explore">Explore</NavLink></li>
+            <li><NavLink id="shopScreen" to="/shop">Shop</NavLink></li>
+            <li><NavLink id="tradeScreen" to="/trade">Trade</NavLink></li>
           </nav>
         </div>
       </NavStyle>
@@ -26,14 +26,23 @@ export default Navigation;
 const NavStyle = styled.div`
     padding: 1em;
     background-color: #a1dacf;
-    align-items: center;
-    justify-content: space-between;
+
+    div{
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
 
     nav{
-      display: inline;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      padding-left: 30px;
-      padding-right: 30px;
+      display: inline-flex;
+    }
+
+    li{
+      list-style-type: none;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-inline-start: 40px;
     }
 `
