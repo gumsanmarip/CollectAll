@@ -1,20 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-
-import Login from './Login';
-
+import NavItems from './Navigation';
 function Header(){
 
  return(
  <HeaderStyle>
-     <h1><Link to="/">Neesh</Link></h1>
+     <h1><Link to="/">NEESH</Link></h1>
+    <NavItems></NavItems>
     <MenuStyle>
-        <li><Link to="login">Login/Register</Link></li>
-        <li><Link to="profile">Profile</Link></li>
+        <li><Link to="account">Login/Register/Logout</Link></li>
         <li><Link to="notifications">Notifications</Link></li>
-        <li><Link to="logout">Logout</Link></li>
+        <li><Link to="profile">Profile</Link></li>
     </MenuStyle>
+
  </HeaderStyle>
  );
 }

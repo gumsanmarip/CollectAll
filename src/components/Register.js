@@ -1,15 +1,15 @@
 import React, { useState } from 'react'
 
 
-function Profile(props) {
+function Register(props) {
 
 
   return (
-      <h2>Profile</h2>
+      <h2>Register</h2>
       
   
          
     );
        
 };
-export default Profile;
+export default Register;
