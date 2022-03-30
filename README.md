@@ -10,6 +10,7 @@ Homepage
     view for sale items
     view trade items  
 Groups
+    shows joined groups
     create Groups
         add name, description and picture 
     join Groups
