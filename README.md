@@ -3,6 +3,8 @@ Collectables App
 MVP
 
 Login
+    register
+    username, password
 Homepage 
     view joined Groups
     view for sale items
@@ -21,7 +23,7 @@ Trade
     create trade items
         add name, description and picture
     add trade to cart
-    
+
 
 
 
