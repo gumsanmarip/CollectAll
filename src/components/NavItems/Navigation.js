@@ -9,9 +9,10 @@ function Navigation(props) {
     <NavStyle>
         <div role="banner">
           <nav>
-            <li><NavLink id="exploreScreen" to="explore">Explore</NavLink></li>
-            <li><NavLink id="shopScreen" to="shop">Shop</NavLink></li>
-            <li><NavLink id="tradeScreen" to="trade">Trade</NavLink></li>
+            <li><NavLink id="homeScreen" to="/">Home</NavLink></li>
+            <li><NavLink id="exploreScreen" to="/explore">Explore</NavLink></li>
+            <li><NavLink id="shopScreen" to="/shop">Shop</NavLink></li>
+            <li><NavLink id="tradeScreen" to="/trade">Trade</NavLink></li>
           </nav>
         </div>
       </NavStyle>
