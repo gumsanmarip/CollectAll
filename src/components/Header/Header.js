@@ -1,20 +1,35 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import NavItems from './Navigation';
+import NavItems from '../NavItems/Navigation';
+import Search from '../Search/Search';
+
 function Header(){
 
  return(
+ <div>
  <HeaderStyle>
-     <h1><Link to="/">NEESH</Link></h1>
-    <NavItems></NavItems>
-    <MenuStyle>
-        <li><Link to="account">Login/Register/Logout</Link></li>
-        <li><Link to="notifications">Notifications</Link></li>
-        <li><Link to="profile">Profile</Link></li>
-    </MenuStyle>
+    <div>
+        <h1><Link to="/">NEESH</Link></h1>
+    </div>
+    <div>
+        <NavItems/>
+    </div>
+    <div>
+        <Search/>
+    </div>
+    <div>
+        <MenuStyle>
+            <li><Link to="/login">Res/In/Out</Link></li>
+            <li><Link to="/notifications">Notifications</Link></li>
+            <li><Link to="/profile">Profile</Link></li>
+        </MenuStyle>
+    </div>
+
+    
 
  </HeaderStyle>
+ </div>    
  );
 }
 
@@ -24,12 +39,11 @@ const HeaderStyle = styled.div`
     padding: 1em;
     background-color: #daa1ac;
     display:flex;
-    align-items: center;
+    
     justify-content: space-between;
 
     p {
-        font-weight: bold;
-        font-size: 1.5em;
+        font-size: 1em;
     }
 `
 
