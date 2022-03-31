@@ -21,6 +21,7 @@ const FooterStyle = styled.div`
   .footer {
     padding: 1em;
     background-color: #8aa4b9;
+    color: white;
 
     position: fixed;
     left: 0;

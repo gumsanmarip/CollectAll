@@ -15,12 +15,10 @@ function Header(){
     <div>
         <NavItems/>
     </div>
-    <div>
-        <Search/>
-    </div>
+   
     <div>
         <MenuStyle>
-            <li><Link to="/login">Res/In/Out</Link></li>
+            <li><Link to="/login">Login</Link></li>
             <li><Link to="/notifications">Notifications</Link></li>
             <li><Link to="/profile">Profile</Link></li>
         </MenuStyle>

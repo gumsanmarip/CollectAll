@@ -1,12 +1,22 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
+import TextField from "@mui/material/TextField";
 
 function Search(props) {
 
 
   return (
     <SearchStyle>
-      <h2>Search</h2>
+      <div className='search'>
+        <div>
+          <TextField
+            id="outlined"
+            fullWidth
+            label="Search"
+          />  
+        </div>
+      
+      </div>
     </SearchStyle>
 
   )
@@ -15,7 +25,6 @@ export default Search;
 
 const SearchStyle = styled.div`
     padding: 1em;
-    background-color: #daa1ac;
     display:flex;
     
     justify-content: space-between;
