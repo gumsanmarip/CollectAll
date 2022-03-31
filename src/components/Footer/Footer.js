@@ -23,7 +23,6 @@ const FooterStyle = styled.div`
     background-color: #8aa4b9;
     color: white;
 
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;

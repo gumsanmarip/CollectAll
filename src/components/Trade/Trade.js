@@ -13,9 +13,7 @@ function Trade(props) {
           <div>
             <h2>Trade</h2>
           </div>
-          <div>
-            <Search/>
-          </div>
+          
         </div>
         
         <div className='itemslist'>

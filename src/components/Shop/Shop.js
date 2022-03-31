@@ -13,9 +13,6 @@ function Shop(props) {
           <div>
             <h2>Shop</h2>
           </div>
-          <div>
-            <Search/>
-          </div>
         </div>
         
         <div className='itemslist'>

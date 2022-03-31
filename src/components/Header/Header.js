@@ -9,20 +9,26 @@ function Header(){
  return(
  <div>
  <HeaderStyle>
-    <div>
-        <h1><Link to="/">NEESH</Link></h1>
+    <div className='topheader'>
+        <div className='logo'>
+            <h1><Link to="/">NEESH</Link></h1>
+        </div>
+        <div>
+            <Search/>
+        </div>
+        <div className='menu'>
+            <MenuStyle>
+                <li><Link to="/login">Login</Link></li>
+                <li><Link to="/notifications">Notifications</Link></li>
+                <li><Link to="/profile">Profile</Link></li>
+            </MenuStyle>
+        </div>    
     </div>
+
     <div>
         <NavItems/>
     </div>
    
-    <div>
-        <MenuStyle>
-            <li><Link to="/login">Login</Link></li>
-            <li><Link to="/notifications">Notifications</Link></li>
-            <li><Link to="/profile">Profile</Link></li>
-        </MenuStyle>
-    </div>
 
     
 
@@ -37,8 +43,21 @@ const HeaderStyle = styled.div`
     padding: 1em;
     background-color: #daa1ac;
     display:flex;
-    
+    flex-direction:column; 
     justify-content: space-between;
+    
+
+    .topheader {
+        display:flex;
+        flex-direction:row;
+        align-items: center;
+    }
+    .menu {
+        display:flex;
+        flex-direction:row-reverse;
+        align-items: center;
+        margin-left: auto;
+    }
 
     p {
         font-size: 1em;
@@ -46,6 +65,7 @@ const HeaderStyle = styled.div`
 `
 
 const MenuStyle = styled.ul`
+    
   li {
         display: inline-block;
         padding: 0.3rem 1rem;
